@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { galleryImages } from '../constants';
 
@@ -16,20 +17,20 @@ const Gallery: React.FC = () => {
                     نحن نؤمن بأن الأناقة تكمن في التفاصيل. تصفح معرضنا لإلقاء نظرة على أحدث تشكيلاتنا واستلهم إطلالتك القادمة.
                 </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[250px]">
                 {galleryImages.map((image, index) => {
-                    let itemClass = 'col-span-1 row-span-1';
+                    let itemClass = '';
                     // Make specific images larger for a more dynamic layout
-                    if (index === 0) itemClass = 'md:col-span-2 md:row-span-2 col-span-2 row-span-2 !auto-rows-[416px]';
-                    if (index === 3) itemClass = 'md:col-span-2 md:row-span-1 col-span-2';
+                    if (index === 0) itemClass = 'md:col-span-2 md:row-span-2 col-span-2 row-span-2';
+                    if (index === 3) itemClass = 'md:col-span-2 col-span-2';
                     
                     return (
-                        <div key={image.id} className={`overflow-hidden rounded-2xl group relative shadow-xl shadow-gray-200/50 bg-white p-4 ${itemClass}`}>
+                        <div key={image.id} className={`overflow-hidden rounded-2xl group relative shadow-xl shadow-gray-200/50 ${itemClass}`}>
                             <img 
                                 src={image.src} 
                                 alt={image.alt} 
                                 loading="lazy" 
-                                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
                             />
                         </div>
                     )

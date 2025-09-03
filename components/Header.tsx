@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 
 /**
@@ -25,7 +26,8 @@ const Header: React.FC = () => {
   }, [isMenuOpen]);
 
   const navLinks = [
-    { href: "#why-us", text: "لماذا نحن" },
+    { href: "#shop", text: "المتجر" },
+    { href: "#gallery", text: "معرضنا" },
     { href: "#about", text: "من نحن" },
     { href: "#contact", text: "تواصل" },
   ];

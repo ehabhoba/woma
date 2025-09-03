@@ -1,3 +1,4 @@
+
 # Woma Brand Website
 
 This project is a single-page corporate website for **Woma**, a men's clothing brand based in Helwan, Cairo. It's built with React and TypeScript, and styled with Tailwind CSS. The website is designed to be fully responsive, accessible, and highly optimized for search engines (SEO).
@@ -9,6 +10,8 @@ This project is a single-page corporate website for **Woma**, a men's clothing b
 - **Highly SEO Optimized:** 
   - Includes all necessary meta tags for search engines and social media platforms (Open Graph).
   - Implements **JSON-LD Structured Data** to provide rich context to search engines, improving search visibility and how the link appears when shared.
+- **Product Showcase:** A dedicated shop section to display the latest products.
+- **Image Gallery:** An aesthetic masonry-style gallery to showcase brand looks.
 - **Useful & Informative:** A dedicated "Why Us" section clearly communicates the brand's value propositions.
 - **Interactive:** Features smooth transitions and hover effects for a better user experience.
 - **WhatsApp Integration:** Allows users to easily contact the brand or place orders directly via WhatsApp through multiple call-to-action buttons and a contact form.
@@ -31,6 +34,9 @@ The project is organized into the following main directories:
 - **`App.tsx`**: The main component that assembles all the pages and layouts.
 - **`Header.tsx`**: The sticky navigation bar at the top of the page, including the brand logo, navigation links, and a "Order Now" button. It also includes a fully functional mobile menu.
 - **`Hero.tsx`**: The main introductory section (the "hero" section) that grabs the user's attention.
+- **`Shop.tsx`**: A section that displays a grid of the latest products available.
+- **`ProductCard.tsx`**: A reusable card component to display individual product information.
+- **`Gallery.tsx`**: A section with a masonry-style grid of images to showcase brand aesthetics.
 - **`WhyUs.tsx`**: A section highlighting the key benefits of choosing the Woma brand.
 - **`About.tsx`**: A section that provides information about the Woma brand.
 - **`Contact.tsx`**: A contact section with company details, a contact form that integrates with WhatsApp, and an embedded Google Map.
