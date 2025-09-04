@@ -1,5 +1,5 @@
 import React from 'react';
-import { whyUsPoints } from '../constants';
+import { whyUsPoints } from '../data';
 
 /**
  * The Why Us section component.

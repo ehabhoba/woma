@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { galleryImages } from '../constants';
+import { galleryImages } from '../data';
 
 /**
  * The Gallery section component.

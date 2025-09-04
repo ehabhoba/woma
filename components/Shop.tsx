@@ -1,8 +1,6 @@
-
 import React from 'react';
-import type { Product } from '../types';
 import ProductCard from './ProductCard';
-import { products } from '../constants';
+import { products } from '../data';
 
 const Shop: React.FC = () => {
     return (
